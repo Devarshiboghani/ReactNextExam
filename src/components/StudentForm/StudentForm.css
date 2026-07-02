@@ -1,0 +1,137 @@
+.add-student-page {
+  min-height: 100vh;
+  background: #120e2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.student-card {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.student-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.student-header h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.student-header p {
+  color: #dbeafe;
+  margin: 0;
+}
+
+.student-card form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #1e1740;
+}
+
+.field-wrap,
+.row-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-wrap:last-child,
+.row-fields:last-child {
+  grid-column: span 2;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.student-card input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  outline: none;
+  background: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.student-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+.student-card input::placeholder {
+  color: #999;
+}
+
+input[type="file"] {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.text-danger {
+  color: #ffd6d6;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.student-card button {
+  grid-column: span 2;
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.student-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.student-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .student-card {
+    padding: 25px;
+  }
+
+  .student-card form {
+    grid-template-columns: 1fr;
+  }
+
+  .student-card button,
+  .field-wrap:last-child,
+  .row-fields:last-child {
+    grid-column: span 1;
+  }
+
+  .student-header h1 {
+    font-size: 26px;
+  }
+}

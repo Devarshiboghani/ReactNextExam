@@ -1,0 +1,125 @@
+.student-cards {
+  padding: 10px;
+}
+
+.student-card {
+  background: #2a2152;
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.35s;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.student-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(124, 58, 237, 0.25);
+}
+
+.student-image {
+  position: relative;
+  min-height: 150px;
+  overflow: hidden;
+}
+
+.student-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.student-card:hover .student-image img {
+  transform: scale(1.08);
+}
+
+.student-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px;
+  background: linear-gradient(transparent, rgba(18, 14, 42, 0.95));
+}
+
+.student-overlay h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.student-overlay span {
+  display: inline-block;
+  padding: 6px 15px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.student-body {
+  padding: 22px;
+}
+
+.student-body p {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.student-body p span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.student-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #7c3aed;
+  border: none;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #6d28d9;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ff5c5c;
+  border: 1px solid #ff5c5c;
+}
+
+.delete-btn:hover {
+  background: #ff5c5c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .student-image {
+    height: 200px;
+  }
+
+  .student-overlay h3 {
+    font-size: 22px;
+  }
+}
