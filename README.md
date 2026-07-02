@@ -49,41 +49,41 @@ student-management-system/
 │   ├── app/
 │   │   ├── api/
 │   │   │   ├── auth/
-│   │   │   │   ├── login/          # POST /api/auth/login
-│   │   │   │   └── signup/         # POST /api/auth/signup
+│   │   │   │   ├── login/         
+│   │   │   │   └── signup/         
 │   │   │   └── students/
-│   │   │       ├── route.js        # GET/POST /api/students
-│   │   │       └── [id]/route.js   # GET/PUT/DELETE /api/students/:id
-│   │   ├── add-student/            # Add student page
-│   │   ├── dashboard/              # Main dashboard page
-│   │   ├── edit-student/           # Edit student page
-│   │   ├── profile/                # User profile page
-│   │   ├── signin/                 # Sign-in page
-│   │   ├── signup/                 # Sign-up page
+│   │   │       ├── route.js        
+│   │   │       └── [id]/route.js  
+│   │   ├── add-student/            
+│   │   ├── dashboard/             
+│   │   ├── edit-student/           
+│   │   ├── profile/               
+│   │   ├── signin/                
+│   │   ├── signup/                 
 │   │   ├── layout.js
 │   │   ├── page.js
 │   │   ├── globals.css
-│   │   └── StoreProvider.js        # Redux provider wrapper
+│   │   └── StoreProvider.js      
 │   ├── components/
 │   │   ├── Navbar/
 │   │   ├── StudentCard/
 │   │   ├── StudentForm/
 │   │   └── StudentList/
 │   ├── context/
-│   │   └── SearchContext.jsx       # Global search state
+│   │   └── SearchContext.jsx       
 │   ├── lib/
-│   │   ├── connectDB.js            # MongoDB connection
+│   │   ├── connectDB.js           
 │   │   └── model/
-│   │       ├── Student.js          # Student schema
-│   │       └── User.js             # User schema
+│   │       ├── Student.js         
+│   │       └── User.js            
 │   ├── redux/
 │   │   ├── actions/
 │   │   ├── reducers/
 │   │   └── store.js
 │   ├── services/
-│   │   └── uploadImage.js          # Image upload logic
+│   │   └── uploadImage.js          
 │   └── utils/
-│       └── auth.js                 # Form/auth validation helpers
+│       └── auth.js                 
 ├── public/
 ├── .env.local
 ├── package.json
@@ -148,17 +148,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 | `/add-student` | Add a new student |
 | `/edit-student` | Edit an existing student |
 | `/profile` | View/manage user profile |
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<div align="center">
-
-Made with ❤️ using Next.js
-
-</div>
